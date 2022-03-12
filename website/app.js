@@ -83,7 +83,7 @@ try {
 
  /*Function to GET Project Data*/ 
 const printData = async () => {
-console.log("hii");
+  
   const response = await fetch("/all");
   
 try {
