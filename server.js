@@ -36,6 +36,6 @@ app.post("/all", function(request, response){
     date: request.body.date,
     feeling: request.body.feeling
 };
-console.log(projectData);
+response.send({ success: true });
 });
   
