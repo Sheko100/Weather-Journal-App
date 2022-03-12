@@ -1,9 +1,9 @@
 
 // Personal API Key for OpenWeatherMap API
-const apiKey = "&appid=8e25534c4965a13b8db29f4e921530ea";
+const apiKey = "&appid=8e25534c4965a13b8db29f4e921530ea&units=imperial";
 // global variables 
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
 // Event listener to add function to existing HTML DOM element
 document.getElementById("generate").addEventListener("click", generateData);
 /* Function called by event listener */
@@ -95,10 +95,8 @@ try {
   document.getElementById("content").innerHTML = projectData.feeling;
 } catch (error) {
   console.log(error);
+  window.alert(error);
 }
 }
 
-  //getWeather(35.3273, 28.336);
-//generateData(85001);
-//postData("/forecast", {greeting:"hi"});
 
